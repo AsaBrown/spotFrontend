@@ -1,0 +1,50 @@
+input[type=text], select {
+    width: 95%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #formDiv {
+      width: 300px;
+      margin: auto;
+  }
+
+  #formDiv h3 {
+    width: max-content;
+    margin: auto;
+  }
+
+  #queryForm {
+    /* background-color: #3C5148; */
+    background-color: rgba(34,34,34,0.4);
+    border-radius: 15px;
+    font-family: Raleway;
+    color: white;
+    padding: 10px;
+    width: 675px;
+    margin: auto;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+  }
+
+  #buttonDiv {
+      margin: auto;
+      width: 75%;
+      /* width: max-content; */
+  }
+
+  #buttonDiv button {
+      margin: 5px;
+  }
+
+  .mainQueryDiv {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100vw - 75px - 445px - 445px);
+    /* width: 100vw; */
+    margin-top: 75px;
+  }

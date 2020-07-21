@@ -1,0 +1,22 @@
+#info {
+    background-color: #3C5148;
+    border-radius: 15px;
+    font-family: Raleway;
+    color: white;
+    padding: 10px;
+    width: 400px;
+    /* position: absolute; */
+    /* right: 25px; */
+    /* top: 150px; */
+    /* top: 200px; */
+    /* margin-left: -200px; */
+    /* left: 50%; */
+    margin: 25px 25px 0px 0px;
+    /* display: inline-block; */
+}
+
+.mainInfoDiv {
+    display: inline-block;
+    height: 200px;
+    vertical-align: top;
+}

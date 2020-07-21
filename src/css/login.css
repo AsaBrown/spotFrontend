@@ -1,0 +1,17 @@
+#login {
+    background-color: #3C5148;
+    border-radius: 15px;
+    font-family: Raleway;
+    color: white;
+    padding: 10px;
+    width: 400px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    /* top: 200px; */
+}
+
+#loginButtons {
+    margin: auto;
+    width: 130px;
+}
