@@ -46,9 +46,9 @@ export const QueryResults = (props) => {
         );
     }
 
-    const StyledTrackColumn = styled.div`
-        word-wrap: break-word;
-    `;
+//     const StyledTrackColumn = styled.div`
+//         word-wrap: break-word;
+//     `;
 
     // const trackColumnComponent = ({value}) => {
     //     return (
