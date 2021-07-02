@@ -2,7 +2,7 @@ import React from 'react'
 import Griddle, {RowDefinition, ColumnDefinition} from 'griddle-react';
 import { selectors } from 'griddle-react';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import '../css/queryresults.css';
 
 export const QueryResults = (props) => {
@@ -46,9 +46,9 @@ export const QueryResults = (props) => {
         );
     }
 
-    const StyledTrackColumn = styled.div`
-        word-wrap: break-word;
-    `;
+//     const StyledTrackColumn = styled.div`
+//         word-wrap: break-word;
+//     `;
 
     // const trackColumnComponent = ({value}) => {
     //     return (
