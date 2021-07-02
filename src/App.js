@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import { Home } from './Home'
+import { Login } from './components/Login';
 import { SideBar } from './components/SideBar'
 import { withStore} from 'react-context-hook'
 import { Redirect } from 'react-router-dom';
@@ -27,9 +28,9 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            {/* <Route path="/login">
+            <Route path="/login">
               <Login />
-            </Route> */}
+            </Route>
             <Route path='/test'>
               {/* {queryForSongs()}; */}
             </Route>
