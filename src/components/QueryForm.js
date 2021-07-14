@@ -12,7 +12,7 @@ function QueryForm() {
         // history.push('/login');
         e.preventDefault();
         console.log("CALLING QUERY");
-        fetch('http://localhost:5000/querySpotify/querySongs/' + artist + '/' + track).then(response => response.text()).then(body => {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/querySpotify/querySongs/` + artist + '/' + track).then(response => response.text()).then(body => {
                 console.log("returned query");
                 let list = JSON.parse(body);
                 let returnList = [];

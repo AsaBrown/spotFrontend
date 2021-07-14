@@ -8,14 +8,14 @@ import '../css/queryresults.css';
 export const QueryResults = (props) => {
     function playSong(e, songId){
         e.preventDefault();
-        fetch('http://localhost:5000/querySpotify/playSong/' + songId).then(response => response.text()).then(body => {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/querySpotify/playSong/` + songId).then(response => response.text()).then(body => {
                 console.log(body);
             });
     }
 
     function queueSong(e, songId) {
         e.preventDefault();
-        fetch('http://localhost:5000/querySpotify/queueSong/' + songId).then(response => response.text()).then(body => {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/querySpotify/queueSong/` + songId).then(response => response.text()).then(body => {
                 console.log(body);
             });
     }

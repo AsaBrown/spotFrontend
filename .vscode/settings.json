@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/be3e0a35-3245-4838-82d8-d323a06adcf6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/browna62web",
+    "appService.deploySubpath": "."
+}

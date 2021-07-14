@@ -27,15 +27,9 @@
   
 }
 
-body > #root > div {
-  height: 100vh;
-  width: 100vw;
-  /* overflow: none; */
-  /* background-color: #0F0F0F; */
-  /* background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/fabric-1-dark.png"); */
-background: rgb(113,107,134);
-background: linear-gradient(to bottom right, rgba(113,107,134,1) 0%, rgba(61,54,64,1) 55%);
+
+body {
+  background: linear-gradient(to bottom right, rgba(113,107,134,1) 0%, rgba(61,54,64,1) 55%) fixed;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');

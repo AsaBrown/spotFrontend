@@ -4,7 +4,7 @@ import '../css/login.css';
 function doLogin(e) {
     console.log("Doing Login");
     e.preventDefault();
-    fetch('http://localhost:5000/auth/login').then(response => response.text()).then(body => {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/login`).then(response => response.text()).then(body => {
             console.log(body);
             window.location.replace(body);
         });
@@ -13,12 +13,22 @@ function doLogin(e) {
 export const Login = () => {
     return (
         <div id='login'>
-            <div id='loginButtons'>
-                <h3>Please Login!</h3>
-                <button className='myButton'onClick={doLogin}>
-                    Click here to login!
-                </button>
-            </div>
+            <form>
+                <input type="text" id="user" name="user" placeholder="Username" />
+                <br/>
+                <input type="text" id="pass" name="pass" placeholder="Password" />
+                <br />
+                <button type="submit">Login</button>
+            </form>
+            <br /><br />
+            <form>
+                <input type="text" id="user" name="user" placeholder="Username" />
+                <br/>
+                <input type="text" id="pass" name="pass" placeholder="Password" />
+                <br />
+                <button type="submit">Sign Up</button>
+                <button className='myButton' onClick={doLogin}>Query Songs</button>
+            </form>
         </div>
     );
 }

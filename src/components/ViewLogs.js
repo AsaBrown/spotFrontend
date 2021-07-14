@@ -16,7 +16,7 @@ export const ViewLogs = () => {
 
     useInterval(() => {
         console.log('using interval');
-        fetch('http://localhost:5000/querySpotify/queryLogs/').then(response => response.text()).then(body => {
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/querySpotify/queryLogs/`).then(response => response.text()).then(body => {
                 setLogData(JSON.parse(body));
             });
       }, 10000);
