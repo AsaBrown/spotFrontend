@@ -9,7 +9,7 @@ import { Home } from './Home'
 import { Login } from './components/Login';
 import { SideBar } from './components/SideBar'
 import { withStore} from 'react-context-hook'
-// import { Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 /*
 function queryForSongs(e) {
   return <Redirect to='/login' />
