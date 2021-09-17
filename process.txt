@@ -1,0 +1,36 @@
+right now:
+    access site
+        if not cookied
+            log in
+        if cookied
+            continue as normal with user in storage
+eventually
+    if not cookied  
+        access normal site
+    if cookied
+        if attempting access to authed url
+            redirect to login
+        else attemting access to non authed url
+            continue as usual
+
+
+
+if login with password invalid
+    server respond with email already used, suggest reset password
+
+if register with email already used
+    notify, suggest login
+
+if login with invalid password 
+    log attempts
+    log ip
+    lock after 5 tries
+
+
+user arrives on site
+    user is cookied
+        finduser finds the user in cookie, user is directed to their personalized homepade
+    user is not cookied
+
+
+

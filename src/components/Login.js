@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/login.css';
 
+
 function doLogin(e) {
     console.log("Doing Login");
     e.preventDefault();
@@ -15,6 +16,7 @@ const doSiteLogin = (e) => {
     fetch(`${process.env.REACT_APP_BACKEND_URL}/authentication/login`, {
         method: 'POST',
         mode: 'cors',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
         },
