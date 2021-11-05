@@ -5,15 +5,15 @@ import '../css/login.css';
 function doLogin(e) {
     console.log("Doing Login");
     e.preventDefault();
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/login`).then(response => response.text()).then(body => {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/spotify/login`).then(response => response.text()).then(body => {
             console.log(body);
             window.location.replace(body);
         });
-  }
+}
 
 const doSiteLogin = (e) => {
     e.preventDefault();
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/authentication/login`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/site/login`, {
         method: 'POST',
         mode: 'cors',
         credentials: 'include',
@@ -30,9 +30,10 @@ const doSiteLogin = (e) => {
         // store jwt token in cookies
     });
 }
+
 const doSiteSignup = (e) => {
     e.preventDefault();
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/authentication/signUp`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/site/signUp`, {
         method: 'POST',
         mode: 'cors',
         headers: {

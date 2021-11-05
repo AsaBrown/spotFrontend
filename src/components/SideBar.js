@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { IoIosHome } from 'react-icons/io';
 import { IoIosLogIn } from 'react-icons/io';
+import { IoLogoUsd } from 'react-icons/io';
 
 const StyledSideBar = styled.div`   
     position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
@@ -31,7 +32,13 @@ export const SideBar = () => {
             name: 'Login',
             css: <IoIosLogIn/>,
             key: 2
-        }
+        },
+        // {
+        //     path: '/teller',
+        //     name: 'Bank',
+        //     css: <IoLogoUsd/>,
+        //     key: 3
+        // }
     ]);
 
     let location = useLocation();

@@ -14,6 +14,7 @@ import { UserContext } from './hooks/UserContext';
 import useFindUser from './hooks/useFindUser';
 import PrivateRoute from './components/PrivateRoute';
 import { Plaid } from './Plaid';
+import { BankSignup } from './components/pageComponents/BankSignup';
 /*
 function queryForSongs(e) {
   return <Redirect to='/login' />
@@ -31,9 +32,6 @@ function App() {
             <SideBar/>
             <div className='mainDiv'>
               <Switch>
-                {/* <Route path=''>
-                  <Redirect to='/home' />
-                </Route> */}
                 <Route path="/home">
                   <Home />
                 </Route>
@@ -43,10 +41,7 @@ function App() {
                 <Route path='/test'>
                   {/* {queryForSongs()}; */}
                 </Route>
-                <PrivateRoute path="/home2" component={Home}/>
-                <Route path='/bank'>
-                  <Plaid />
-                </Route>
+                <PrivateRoute path="/home2" component={BankSignup}/>
               </Switch>
             </div>
             </UserContext.Provider>
